@@ -46,7 +46,7 @@ after_script:
 - git init
 - git add .
 - git commit -m "Site updated:`date +"%Y-%m-%d %H:%M:%S"`"
-- git remote add origin https://github.com/Nightbone/Nightbone.github.io.git
+- git remote add origin git@github.com:Nightbone/Nightbone.github.io.git
 - git push -u origin master -f
 dd:
 - openssl aes-256-cbc -K ${encrypted_6148c8409cc2_key} -iv ${encrypted_6148c8409cc2_iv}
