@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[travis]
+	slug = Nightbone/Nightbone.github.io
+[remote "origin"]
+	url = git@github.com:Nightbone/Nightbone.github.io.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
