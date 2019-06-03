@@ -10,7 +10,7 @@ branches:
   only:
   - dev
 before_install:
-- openssl aes-256-cbc -K ${encrypted_6148c8409cc2_key} -iv ${encrypted_6148c8409cc2_iv}
+- openssl aes-256-cbc -K $encrypted_6148c8409cc2_key -iv $encrypted_6148c8409cc2_iv
   -in .travis/travis_rsa.enc -out ~/.ssh/travis_rsa -d
 - chmod 600 ~/.ssh/travis_rsa
 - eval $(ssh-agent)
@@ -43,7 +43,7 @@ script:
 - hexo clean && hexo g
 after_script:
 - set -ev
-- export TZ='Asia/Shanghai'
+- export TZ='Asia/Hong_Kong'
 - cd ./public
 - git config user.name "Nightbone"
 - git config user.email "alvis.lui@gmail.com"
