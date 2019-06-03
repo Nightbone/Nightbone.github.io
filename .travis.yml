@@ -13,7 +13,6 @@ before_install:
 - openssl aes-256-cbc -K ${encrypted_6148c8409cc2_key} -iv ${encrypted_6148c8409cc2_iv}
   -in .travis/travis_rsa.enc -out ~/.ssh/travis_rsa -d
 - chmod 600 ~/.ssh/travis_rsa
-#- mv -fv .travis/config ~/.ssh/config
 install:
 - npm install hexo-cli -g
 - npm install hexo-math --save
@@ -48,6 +47,3 @@ after_script:
 - git commit -m "Site updated:`date +"%Y-%m-%d %H:%M:%S"`"
 - git remote add origin git@github.com:Nightbone/Nightbone.github.io.git
 - git push -u origin master -f
-dd:
-- openssl aes-256-cbc -K ${encrypted_6148c8409cc2_key} -iv ${encrypted_6148c8409cc2_iv}
-  -in travis_rsa.enc -out travis_rsa -d
