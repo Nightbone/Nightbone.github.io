@@ -28,7 +28,7 @@ install:
 - npm install mermaid --save
 - npm install hexo-tag-mermaid --save
 - npm install hexo-tag-plantuml --save
-- npm install font-awesome --save
+- npm install hexo-fontawesome --save
 before_script:
 - cd ./themes/next
 - git clone https://github.com/theme-next/theme-next-fancybox3 source/lib/fancybox
